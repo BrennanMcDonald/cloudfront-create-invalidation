@@ -44,7 +44,7 @@ EOF
 # All other flags are optional via the `args:` directive.
 sh -c "aws cloudfront create-invalidation \
     --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION} \
-    --paths ${$AWS_ITEMS_TO_INVALIDATE}"
+    --paths ${AWS_ITEMS_TO_INVALIDATE}"
 
 # Clear out credentials after we're done.
 # We need to re-run `aws configure` with bogus input instead of
