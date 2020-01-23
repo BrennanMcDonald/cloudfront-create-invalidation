@@ -43,7 +43,7 @@ EOF
 # Sync using our dedicated profile and suppress verbose messages.
 # All other flags are optional via the `args:` directive.
 sh -c "aws cloudfront create-invalidation \
-    --distribution-id ${AWS_DISTRIBUTION} \
+    --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION} \
     --paths ${$AWS_ITEMS_TO_INVALIDATE}"
 
 # Clear out credentials after we're done.
