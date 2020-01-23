@@ -1,0 +1,9 @@
+name: "CloudFront Invalidate Item(s)"
+description: "Invalidates items in a CloudFront cache."
+author: brennanmcdonald
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: file-minus
+  color: green
